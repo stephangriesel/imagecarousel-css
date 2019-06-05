@@ -83,4 +83,22 @@ h1 {
             transform: translate(calc(-100% + (5*300px)));
   }
 }
+
+.container .faders {
+  width: 100%;
+  height: 100%;
+}
+
+.container .faders .left, .container .faders .right {
+  background: -webkit-gradient(linear, left top, right top, from(#29b8e5), color-stop(19%, #29b8e5), color-stop(76%, #b3dced), color-stop(80%, #b3dced), color-stop(80%, #b3dced), color-stop(86%, #bce0ee));
+  background: linear-gradient(to right, #29b8e5 0%, #29b8e5 19%, #b3dced 76%, #b3dced 80%, #b3dced 80%, #bce0ee 86%);
+  width: 20%;
+  height: 100%;
+  z-index: 200;
+}
+
+.container .faders .right {
+  background: -webkit-gradient(linear, right top, left top, from(#29b8e5), color-stop(19%, #29b8e5), color-stop(76%, #b3dced), color-stop(80%, #b3dced), color-stop(80%, #b3dced), color-stop(86%, #bce0ee));
+  background: linear-gradient(to left, #29b8e5 0%, #29b8e5 19%, #b3dced 76%, #b3dced 80%, #b3dced 80%, #bce0ee 86%);
+}
 /*# sourceMappingURL=style.css.map */
