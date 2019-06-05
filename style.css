@@ -27,8 +27,8 @@ h1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-animation: carouselAnim 100s infinite alternate linear;
-          animation: carouselAnim 100s infinite alternate linear;
+  -webkit-animation: animateCarousel 100s infinite alternate linear;
+          animation: animateCarousel 100s infinite alternate linear;
 }
 
 .container .items .entry {
@@ -50,5 +50,37 @@ h1 {
   border-radius: 10px;
   -webkit-box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.5);
           box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.5);
+}
+
+.container .items p {
+  text-align: center;
+  padding: 0.8em;
+}
+
+.container .items .name {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+@-webkit-keyframes animateCarousel {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(calc(-100% + (5*300px)));
+            transform: translate(calc(-100% + (5*300px)));
+  }
+}
+
+@keyframes animateCarousel {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(calc(-100% + (5*300px)));
+            transform: translate(calc(-100% + (5*300px)));
+  }
 }
 /*# sourceMappingURL=style.css.map */

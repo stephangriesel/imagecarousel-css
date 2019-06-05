@@ -20,7 +20,7 @@ h1 {
         display:flex;
         align-items: center;
         width:fit-content;
-        animation:carouselAnim 100s infinite alternate linear;
+        animation:animateCarousel 100s infinite alternate linear;
         .entry {
             display:flex;
             align-items: center;
@@ -32,6 +32,24 @@ h1 {
             padding:1em;
             border-radius:10px;
             box-shadow:4px 4px 7px 1px rgba(0,0,0,0.5);
+        }
+        p {
+            text-align:center;
+            padding:0.8em;
+        }
+
+        .name {
+            font-weight:900;
+            font-size:30px;
+        }
+
+        @keyframes animateCarousel {
+            from {
+                transform: translate(0,0);
+            }
+            to {
+                transform: translate(calc(-100% + (5*300px)));
+            }
         }
 
     }
