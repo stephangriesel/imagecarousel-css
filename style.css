@@ -84,6 +84,33 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .container .items {
+    -webkit-animation: animateCarousel 50s infinite alternate linear;
+            animation: animateCarousel 50s infinite alternate linear;
+  }
+  @-webkit-keyframes animateCarousel {
+    from {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    to {
+      -webkit-transform: translate(calc(-100% + (2*300px)));
+              transform: translate(calc(-100% + (2*300px)));
+    }
+  }
+  @keyframes animateCarousel {
+    from {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    to {
+      -webkit-transform: translate(calc(-100% + (2*300px)));
+              transform: translate(calc(-100% + (2*300px)));
+    }
+  }
+}
+
 .container .faders {
   width: 100%;
   position: absolute;
