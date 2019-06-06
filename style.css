@@ -3,7 +3,7 @@ body {
   margin: 0;
   height: calc(100vh - 8em);
   font-family: 'Roboto', sans-serif;
-  background-color: #b4b4b4;
+  background-color: #FFFFFF;
 }
 
 h1 {
@@ -48,8 +48,8 @@ h1 {
   margin: 1em;
   padding: 1em;
   border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.3);
 }
 
 .container .items p {
@@ -86,19 +86,22 @@ h1 {
 
 .container .faders {
   width: 100%;
+  position: absolute;
   height: 100%;
 }
 
 .container .faders .left, .container .faders .right {
-  background: -webkit-gradient(linear, left top, right top, from(#29b8e5), color-stop(19%, #29b8e5), color-stop(76%, #b3dced), color-stop(80%, #b3dced), color-stop(80%, #b3dced), color-stop(86%, #bce0ee));
-  background: linear-gradient(to right, #29b8e5 0%, #29b8e5 19%, #b3dced 76%, #b3dced 80%, #b3dced 80%, #bce0ee 86%);
+  background: -webkit-gradient(linear, left top, right top, from(whitesmoke), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, whitesmoke 0%, rgba(255, 255, 255, 0) 100%);
   width: 20%;
   height: 100%;
+  position: absolute;
   z-index: 200;
 }
 
 .container .faders .right {
-  background: -webkit-gradient(linear, right top, left top, from(#29b8e5), color-stop(19%, #29b8e5), color-stop(76%, #b3dced), color-stop(80%, #b3dced), color-stop(80%, #b3dced), color-stop(86%, #bce0ee));
-  background: linear-gradient(to left, #29b8e5 0%, #29b8e5 19%, #b3dced 76%, #b3dced 80%, #b3dced 80%, #bce0ee 86%);
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, from(whitesmoke), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, whitesmoke 0%, rgba(255, 255, 255, 0) 100%);
 }
 /*# sourceMappingURL=style.css.map */

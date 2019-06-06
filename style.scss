@@ -4,7 +4,7 @@ body {
     margin:0;
     height:calc(100vh - 8em);
     font-family: 'Roboto', sans-serif;
-    background-color:#b4b4b4;
+    background-color:#FFFFFF
 }
 
 h1 {
@@ -31,7 +31,7 @@ h1 {
             margin:1em;
             padding:1em;
             border-radius:10px;
-            box-shadow:4px 4px 7px 1px rgba(0,0,0,0.5);
+            box-shadow:4px 4px 7px 1px rgba(0,0,0,0.3);
         }
         p {
             text-align:center;
@@ -53,23 +53,24 @@ h1 {
         }
 
     }
+
+    
+
     .faders {
         width:100%;
-        // position: absolute;
+        position: absolute;
         height:100%;
-
         .left,.right {
-            background:linear-gradient(to right, #29b8e5 0%,#29b8e5 19%,#b3dced 76%,#b3dced 80%,#b3dced 80%,#bce0ee 86%); 
-            width:20%;
+            background: linear-gradient(to right, rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);width:20%;
             height:100%;
-            // position: absolute;
+            position: absolute;
             z-index:200;
         }
 
         .right {
-            background:linear-gradient(to left, #29b8e5 0%,#29b8e5 19%,#b3dced 76%,#b3dced 80%,#b3dced 80%,#bce0ee 86%); 
-        //     right:0;
-        //     bac
+            right:0;
+            background: linear-gradient(to left, rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
         }
+
     }
 }
